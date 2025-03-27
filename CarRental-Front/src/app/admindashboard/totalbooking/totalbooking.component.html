@@ -1,0 +1,31 @@
+<!-- <p>totalbooking works!</p> -->
+
+<div class="container mt-5">
+  <h2 class="text-center text-primary">📌 Total Bookings</h2>
+
+  <div class="table-responsive mt-4">
+    <table class="table table-hover table-bordered shadow-lg">
+      <thead class="table-dark text-center">
+        <tr>
+          <th>📌 Booking ID</th>
+          <th>👤 User ID</th>
+          <th>🚗 Car ID</th>
+          <th>📅 Start Date</th>
+          <th>📅 End Date</th>
+          <th>💰 Total Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of bookings" class="text-center">
+          <td><strong>#{{ booking.id }}</strong></td>
+          <!-- <td>{{ booking.userId }}</td> -->
+          <td>{{ booking.user?.id }}</td>
+          <td>{{ booking.car?.id }}</td>
+          <td>{{ booking.startDate | date: 'dd MMM yyyy' }}</td>
+          <td>{{ booking.endDate | date: 'dd MMM yyyy' }}</td>
+          <td class="text-success fw-bold">₹{{ booking.totalCost }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="background-container"
+    style="background-image: url('../assets/lamborghini_Background.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" routerLink="/">Car Rental</a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/welcome">Available Cars</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Location
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" routerLink="/rental-locations">Pune</a></li>
+                            <li><a class="dropdown-item" routerLink="/rental-locations">Mumbai</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" routerLink="/rental-locations">Others Place</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/loginsignup">Login/SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/admin">AdminLogin/SignUp</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center text-white mt-5">
+        <h1>About Us</h1>
+        <p class="lead">Welcome to Car Rental - Your trusted partner for hassle-free car rentals.</p>
+        <p>We offer a wide range of vehicles at affordable prices, making your travel comfortable and enjoyable.
+            Whether you need a car for business or leisure, we’ve got you covered.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h3>🚗 Wide Range of Cars</h3>
+                <p>Choose from economy to luxury cars.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>💰 Affordable Pricing</h3>
+                <p>Transparent pricing with no hidden charges.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>📍 Convenient Locations</h3>
+                <p>Pick up and drop off at multiple locations.</p>
+            </div>
+            <div class="container text-center text-white mt-5">
+                <h2>🚘 Ready to Ride?</h2>
+                <p>Book your car today and experience hassle-free rentals!</p>
+                <a href="/loginsignup" class="btn btn-success btn-lg">Book Now</a>
+            </div>
+            <div class="container text-center text-white mt-5">
+                <h2>📞 Contact Us</h2>
+                <p>Email: support&#64;carrental.com | Phone: +91 9876543210</p>
+                <p>Follow us on:</p>
+                <a href="#" class="btn btn-primary">Facebook</a>
+                <a href="#" class="btn btn-info">Twitter</a>
+                <a href="#" class="btn btn-danger">Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>

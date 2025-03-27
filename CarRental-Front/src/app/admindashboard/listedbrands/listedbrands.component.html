@@ -1,0 +1,15 @@
+<!-- <p>listedbrands works!</p> -->
+
+<div class="container mt-4">
+  <h2 class="text-center text-primary">Available Car Brands</h2>
+  
+  <div class="row justify-content-center mt-4">
+    <div *ngFor="let brand of brands" class="col-md-3 col-sm-6">
+      <div class="card brand-card shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title text-dark">{{ brand }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="background-container white-text"
+    style="background-image: url('../assets/lamborghini_Background.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+    <div class="container mt-5">
+        <h2>Car Booking</h2>
+        <p>Car ID: {{ carId }}</p>
+
+        <label>Start Date:</label>
+        <input type="date" [(ngModel)]="startDate" (change)="calculateTotalCost()">
+
+        <label>End Date:</label>
+        <input type="date" [(ngModel)]="endDate" (change)="calculateTotalCost()">
+
+        <p *ngIf="totalCost !== undefined"><strong>Total Cost: ₹{{ totalCost }}</strong></p>
+
+        <button class="btn btn-primary mt-2" (click)="calculateTotalCost()">Calculate Total Cost</button>
+        <button class="btn btn-success mt-3" [disabled]="!totalCost" (click)="bookCar()">Confirm Booking</button>
+    </div>
+</div>

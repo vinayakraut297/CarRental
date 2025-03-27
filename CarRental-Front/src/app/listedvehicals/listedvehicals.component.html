@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Car Management</h2>
+
+  <div class="form-group">
+    <input [(ngModel)]="newCar.model" placeholder="Model" class="form-control">
+    <input [(ngModel)]="newCar.brand" placeholder="Brand" class="form-control">
+    <input [(ngModel)]="newCar.priceperday" placeholder="Price per Day" class="form-control">
+    <input [(ngModel)]="newCar.fueltype" placeholder="Fuel Type" class="form-control">
+    <input [(ngModel)]="newCar.image" placeholder="Image URL" class="form-control">
+    <label>Available: <input type="checkbox" [(ngModel)]="newCar.availability"></label>
+    <button (click)="addCar()" class="btn btn-primary mt-2">Add Car</button>
+  </div>
+
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Brand</th>
+        <th>Price/Day</th>
+        <th>Fuel Type</th>
+        <th>Image URL</th>
+        <th>Available</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars">
+        <td><input [(ngModel)]="car.model" class="form-control"></td>
+        <td><input [(ngModel)]="car.brand" class="form-control"></td>
+        <td><input [(ngModel)]="car.priceperday" class="form-control"></td>
+        <td><input [(ngModel)]="car.fueltype" class="form-control"></td>
+        <td><input [(ngModel)]="car.image" class="form-control"></td>
+        <td><input type="checkbox" [(ngModel)]="car.availability"></td>
+        <td>
+          <button (click)="updateCar(car)" class="btn btn-success">Update</button>
+          <button (click)="deleteCar(car.id)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

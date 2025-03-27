@@ -1,0 +1,30 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .brand-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .brand-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  

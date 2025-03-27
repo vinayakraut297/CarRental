@@ -1,0 +1,11 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
